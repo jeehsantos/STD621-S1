@@ -1,0 +1,46 @@
+README.TXT NOTES
+****************************************************
+*		Maori Culture webpage		   *
+*Author: Jefferson S. Macedo * Assignment Aspire2  *
+****************************************************
+Webpage version 0.1 (01/03/2021)
+
+What is this project about ? 
+
+This webpage was develped according to the assignment requirements, to delivery a well design multi-page and responsive platform having contents about the Maori culture, which has video, images, texts sections, and a form for contact and payment.
+
+Technologies used:
+HTML5, CSS3, Bootstrap, JavaScript and jQuery
+
+
+ -----------------------------------
+|Guideline to setup the application |
+ -----------------------------------
+
+1 - This platform was built in a IDE called Visual studio code, however, if necessary any further development another IDE could be used as well.
+2 - As this platform was built using a CSS3 and jQuery framework, is required to insert the CDN link into the <head> </head> tags. 
+3 - The version used for jQuery and Bootstrap
+The document has the following folders:
+CSS/style.css (containing all of the code having the both pages design)
+images/pexels-josiah-farrow-3396660.jpg (picture used as background)
+JS/script.js (containing all the validations for the forms)
+index.html (html for the first page)
+indextwo.html (html for the second page)
+
+Bootstrap 5 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+  </script>
+
+jQuery 3.5.1 
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+ -------------------------
+| Opening the application |
+ -------------------------
+1 - The application can be open using any kind of web navigator
+2 - To open the application you just need to open the file called index.html(home page) or indexttwo.html(second page) located into the folder Maori website
+
+
