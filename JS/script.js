@@ -61,19 +61,22 @@ function payment_fields() {
     var email = document.payForm.email.value;
     var card = document.payForm.card_number.value;
 
-    if (name == "" && address == "" && email == "") {
-        document.getElementById("name").style.backgroundColor = "red";
-        document.getElementById("address").style.backgroundColor = "red";
-        document.getElementById("email").style.backgroundColor = "red";
-        document.getElementById("card_number").style.backgroundColor = "red";
-    } else if (name == "") {
-        document.getElementById("name").style.backgroundColor = "red";
-    } else if (address == "") {
-        document.getElementById("address").style.backgroundColor = "red";
-    } else if (email == "") {
-        document.getElementById("email").style.backgroundColor = "red";
-    } else if (card == "") {
-        document.getElementById("card_number").style.backgroundColor = "red";
+    if (name == "" || address == "" || email == "" || card == "") {
+
+        if (name == "") {
+            document.getElementById("name").style.backgroundColor = "red";
+        }
+        if (address == "") {
+            document.getElementById("address").style.backgroundColor = "red";
+        }
+        if (email == "") {
+            document.getElementById("email").style.backgroundColor = "red";
+        }
+        if (card == "") {
+            document.getElementById("card_number").style.backgroundColor = "red";
+        }
+
+
     } else {
         var name = document.payForm.name.value;
         var address = document.payForm.address.value;
@@ -83,14 +86,12 @@ function payment_fields() {
         card = card.replace(/.(?=.{4})/g, 'x');
         document.getElementById("message").innerHTML = "Hi " + name + " thanks for purchasing our product using your " + type + " credit card no." + card + ". We will email your receipt on " + email + " and send the product to " + address + ".";
     }
-
-
 }
 
-//message payment 
+    //Change the tab content
 
-$(document).ready(function () {
-    $(".nav-tabs a").click(function () {
-        $(this).tab('show');
+    $(document).ready(function () {
+        $(".nav-tabs a").click(function () {
+            $(this).tab('show');
+        });
     });
-});
